@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="" />
+    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/stdlib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percolation/percolation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/percolation/percolation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percolation/src/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/percolation/src/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percolation/src/WeightedQuickUnionUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/percolation/src/WeightedQuickUnionUnionFind.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aX9xSDg0guFoNaUY5kI4Dbz2f3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +34,39 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="/usr/local/lift/lib/stdlib.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Application.PercolationStats">
+    <configuration name="Percolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Percolation" />
+      <module name="percolation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
+      <module name="percolation" />
+      <option name="PROGRAM_PARAMETERS" value="1000 100" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Percolation" />
+      <item itemvalue="Application.PercolationStats" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PercolationStats" />
+        <item itemvalue="Application.Percolation" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,10 +82,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="381" y="102" width="1080" height="737" key="SettingsEditor" timestamp="1586879948617">
+    <state x="95" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587216400875">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="381" y="102" width="1080" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1586879948617" />
+    <state x="95" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1587216400875" />
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1587221261216">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1587221261216" />
+    <state width="1585" height="242" key="GridCell.Tab.0.bottom" timestamp="1587222131499">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="242" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1587222131499" />
+    <state width="1585" height="242" key="GridCell.Tab.0.center" timestamp="1587222131498">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="242" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1587222131498" />
+    <state width="1585" height="242" key="GridCell.Tab.0.left" timestamp="1587222131497">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="242" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1587222131497" />
+    <state width="1585" height="242" key="GridCell.Tab.0.right" timestamp="1587222131499">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="242" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1587222131499" />
+    <state width="1585" height="300" key="GridCell.Tab.1.bottom" timestamp="1587216389528">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="300" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1587216389528" />
+    <state width="1585" height="300" key="GridCell.Tab.1.center" timestamp="1587216389528">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="300" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1587216389528" />
+    <state width="1585" height="300" key="GridCell.Tab.1.left" timestamp="1587216389527">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="300" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1587216389527" />
+    <state width="1585" height="300" key="GridCell.Tab.1.right" timestamp="1587216389528">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1585" height="300" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1587216389528" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1587221268608">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1587221268608" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1586875489087">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

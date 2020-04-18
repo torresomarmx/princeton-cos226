@@ -1,7 +1,9 @@
 public class Percolation {
-    private int[][] sites;
+    private final int[][] sites;
 
-    private WeightedQuickUnionUnionFind dataStructure;
+    private final WeightedQuickUnionUnionFind dataStructure;
+
+    private int numberOfOpenSites;
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
@@ -22,46 +24,53 @@ public class Percolation {
     }
 
     // row and col are indices between 1 and n, inclusive
-    public int getSiteId(int row, int col) {
+    private int getSiteId(int row, int col) {
         return (this.sites.length * (row -1)) + col;
     }
 
     // opens the site (row, col) if it is not open already
     // row and col are numbers between 1 and n, inclusive
     public void open(int row, int col) {
-        int rowZeroIndexed = row - 1;
-        int colZeroIndexed = col - 1;
-        this.sites[rowZeroIndexed][colZeroIndexed] = 1;
+        if (row <= 0 || col <= 0 || row > this.sites.length || col > this.sites.length)
+            throw new IllegalArgumentException("row and/or col is out of bounds");
+        if (this.isOpen(row, col))
+            return;
+        this.sites[row -1][col - 1] = 1;
+        this.numberOfOpenSites += 1;
         // check if top site is open, if so then call union
-        if (rowZeroIndexed -1 >= 0 && this.sites[rowZeroIndexed -1][colZeroIndexed] == 1)
+        if (row - 1 > 0 && this.isOpen(row -1, col))
             this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row -1, col));
 
         // check if bottom site is open, if so then call union
-        if (rowZeroIndexed + 1 <= this.sites.length -1 && this.sites[rowZeroIndexed + 1][colZeroIndexed] == 1) {
+        if (row + 1 <= this.sites.length && this.isOpen(row + 1, col)) {
             this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row + 1, col));
         }
         // check if right site is open, if so then call union
-        if (colZeroIndexed - 1 >= 0 && this.sites[rowZeroIndexed][colZeroIndexed -1] == 1)
-            this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row, col -1));
+        if (col + 1 <= this.sites.length && this.isOpen(row, col + 1))
+            this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row, col + 1));
 
         // check if left site is open, if so then call union
-        if (colZeroIndexed + 1 <= this.sites.length -1 && this.sites[rowZeroIndexed][colZeroIndexed + 1] == 1)
-            this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row, col +1));
+        if (col -1 > 0 && this.isOpen(row, col - 1))
+            this.dataStructure.union(this.getSiteId(row, col), this.getSiteId(row, col - 1));
     }
 
     // is the site (row, col) open?
     public boolean isOpen(int row, int col) {
+        if (row <= 0 || col <= 0 || row > this.sites.length || col > this.sites.length)
+            throw new IllegalArgumentException("row and/or col is out of bounds");
         return this.sites[row - 1][col - 1] == 1;
     }
 
     // is the site (row, col) full?
     public boolean isFull(int row, int col) {
-
+        if (row <= 0 || col <= 0 || row > this.sites.length || col > this.sites.length)
+            throw new IllegalArgumentException("row and/or col is out of bounds");
+        return this.dataStructure.find(this.getSiteId(row, col)) == 0;
     }
 
     // returns the number of open sites
     public int numberOfOpenSites() {
-        return this.sites.length * this.sites.length;
+        return this.numberOfOpenSites;
     }
 
     // does the system percolate?
@@ -71,5 +80,11 @@ public class Percolation {
     }
 
     // test client (optional)
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        Percolation test = new Percolation(3);
+        test.open(2,1);
+        test.open(1,1);
+        test.open(3,1);
+        System.out.println(test.percolates());
+    }
 }

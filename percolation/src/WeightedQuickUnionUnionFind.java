@@ -39,8 +39,15 @@ public class WeightedQuickUnionUnionFind {
             currentId = this.trees[currentId];
         }
 
-        return currentId;
+        int root = currentId;
+        // path compression
+        currentId = treeId;
+        while (this.trees[currentId] != root) {
+            int nextId = this.trees[currentId];
+            this.trees[currentId] = root;
+            currentId = nextId;
+        }
+
+        return root;
     }
-
-
 }

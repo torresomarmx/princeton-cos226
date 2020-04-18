@@ -6,13 +6,15 @@ public class PercolationStats {
 
     // perform independent trials on an n-by-n grid
     public PercolationStats(int n, int trials) {
+        if (n <= 0 || trials <= 0)
+            throw new IllegalArgumentException("Invalid args");
         trialResults = new double[trials];
-        double numberOfSites = n*n;
+        double numberOfSites = n * n;
         Random random = new Random();
         for (int i = 0; i < trials; i++) {
             Percolation percolation = new Percolation(n);
             while (!percolation.percolates()) {
-                percolation.open(random.nextInt(n) + 1, random.nextInt(n) + 1);
+                percolation.open(random.nextInt(n) + 1,  random.nextInt(n) + 1);
             }
             trialResults[i] = (percolation.numberOfOpenSites()) / numberOfSites;
         }
@@ -40,12 +42,12 @@ public class PercolationStats {
 
     // low endpoint of 95% confidence interval
     public double confidenceLo() {
-        return this.mean() - ((1.96*this.stddev()) / Math.sqrt(this.trialResults.length));
+        return this.mean() - ((1.96 * this.stddev()) / Math.sqrt(this.trialResults.length));
     }
 
     // high endpoint of 95% confidence interval
     public double confidenceHi() {
-        return this.mean() + ((1.96*this.stddev()) / Math.sqrt(this.trialResults.length));
+        return this.mean() + ((1.96 * this.stddev()) / Math.sqrt(this.trialResults.length));
     }
 
     // test client (see below)
@@ -56,9 +58,8 @@ public class PercolationStats {
         );
         System.out.println(String.format("mean = %s", stats.mean()));
         System.out.println(String.format("stddev = %s", stats.stddev()));
-        System.out.println(String.format("95%%confidence interval = [%s, %s]",
+        System.out.println(String.format("95%% confidence interval = [%s, %s]",
                 stats.confidenceLo(),
-                stats.confidenceHi()))
-        ;
+                stats.confidenceHi()));
     }
 }

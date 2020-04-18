@@ -7,6 +7,8 @@ public class Percolation {
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
+        if (n <= 0)
+            throw new IllegalArgumentException("Invalid n");
         // +2 for top and bottom virtual sites
         this.dataStructure = new WeightedQuickUnionUnionFind((n*n)+2);
         this.sites = new int[n][n];
@@ -14,7 +16,7 @@ public class Percolation {
             for (int j = 0; j < n; j++) {
                 this.sites[i][j] = 0;
                 // if on top row, connect to top virtual site
-                if (i ==0)
+                if (i == 0)
                     this.dataStructure.union(0, j+1);
                 // if on bottom row, connect to bottom virtual site
                 if (i == n - 1)
@@ -65,7 +67,7 @@ public class Percolation {
     public boolean isFull(int row, int col) {
         if (row <= 0 || col <= 0 || row > this.sites.length || col > this.sites.length)
             throw new IllegalArgumentException("row and/or col is out of bounds");
-        return this.dataStructure.find(this.getSiteId(row, col)) == 0;
+        return this.isOpen(row, col) && this.dataStructure.find(this.getSiteId(row, col)) == this.dataStructure.find(0);
     }
 
     // returns the number of open sites
@@ -76,15 +78,15 @@ public class Percolation {
     // does the system percolate?
     public boolean percolates() {
         // check if top and bottom virtual sites are connected
-        return this.dataStructure.find(0) == this.dataStructure.find(this.dataStructure.getNumberOfTrees() - 1);
+        return this.numberOfOpenSites > 0 && this.dataStructure.find(0) == this.dataStructure.find(this.dataStructure.getNumberOfTrees() - 1);
     }
 
     // test client (optional)
     public static void main(String[] args) {
         Percolation test = new Percolation(3);
-        test.open(2,1);
-        test.open(1,1);
-        test.open(3,1);
+        test.open(2, 1);
+        test.open(1, 1);
+        test.open(3, 1);
         System.out.println(test.percolates());
     }
 }

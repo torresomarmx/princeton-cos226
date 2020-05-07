@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/auto-complete/auto-complete.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -9,6 +10,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="princeton-algorithms" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,17 +40,25 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.Deque">
-    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Deque" />
-      <module name="queues" />
+  <component name="RunManager" selected="Application.Term">
+    <configuration name="Autocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Autocomplete" />
+      <module name="auto-complete" />
+      <option name="PROGRAM_PARAMETERS" value="wiktionary.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Percolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Percolation" />
-      <module name="percolation" />
+    <configuration name="BinarySearchDeluxe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinarySearchDeluxe" />
+      <module name="auto-complete" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Deque" />
+      <module name="queues" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,16 +71,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Term" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Term" />
+      <module name="auto-complete" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.PercolationStats" />
-      <item itemvalue="Application.Percolation" />
       <item itemvalue="Application.Deque" />
+      <item itemvalue="Application.BinarySearchDeluxe" />
+      <item itemvalue="Application.Autocomplete" />
+      <item itemvalue="Application.Term" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Term" />
+        <item itemvalue="Application.BinarySearchDeluxe" />
+        <item itemvalue="Application.Autocomplete" />
         <item itemvalue="Application.Deque" />
         <item itemvalue="Application.PercolationStats" />
-        <item itemvalue="Application.Percolation" />
       </list>
     </recent_temporary>
   </component>
@@ -86,46 +109,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="95" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587216400875">
+    <state x="776" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588847877429">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="95" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1587216400875" />
+    <state x="776" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1588847877428" />
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1587221261216">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1587221261216" />
-    <state width="966" height="242" key="GridCell.Tab.0.bottom" timestamp="1587928703414">
+    <state width="1196" height="157" key="GridCell.Tab.0.bottom" timestamp="1588857102380">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="242" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1587928703414" />
-    <state width="966" height="242" key="GridCell.Tab.0.center" timestamp="1587928703414">
+    <state width="1196" height="157" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
+    <state width="1196" height="157" key="GridCell.Tab.0.center" timestamp="1588857102380">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="242" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1587928703414" />
-    <state width="966" height="242" key="GridCell.Tab.0.left" timestamp="1587928703413">
+    <state width="1196" height="157" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
+    <state width="1196" height="157" key="GridCell.Tab.0.left" timestamp="1588857102380">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="242" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1587928703413" />
-    <state width="966" height="242" key="GridCell.Tab.0.right" timestamp="1587928703414">
+    <state width="1196" height="157" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
+    <state width="1196" height="157" key="GridCell.Tab.0.right" timestamp="1588857102380">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="242" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1587928703414" />
-    <state width="966" height="300" key="GridCell.Tab.1.bottom" timestamp="1587928571209">
+    <state width="1196" height="157" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
+    <state width="1313" height="313" key="GridCell.Tab.1.bottom" timestamp="1588847353409">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="300" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1587928571209" />
-    <state width="966" height="300" key="GridCell.Tab.1.center" timestamp="1587928571209">
+    <state width="1313" height="313" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
+    <state width="1313" height="313" key="GridCell.Tab.1.center" timestamp="1588847353409">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="300" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1587928571209" />
-    <state width="966" height="300" key="GridCell.Tab.1.left" timestamp="1587928571209">
+    <state width="1313" height="313" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
+    <state width="1313" height="313" key="GridCell.Tab.1.left" timestamp="1588847353408">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="300" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1587928571209" />
-    <state width="966" height="300" key="GridCell.Tab.1.right" timestamp="1587928571209">
+    <state width="1313" height="313" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353408" />
+    <state width="1313" height="313" key="GridCell.Tab.1.right" timestamp="1588847353409">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="966" height="300" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1587928571209" />
+    <state width="1313" height="313" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1587221268608">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -138,10 +161,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1587913159163" />
-    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1587816161113">
+    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1588717203206">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1587816161113" />
+    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1588717203206" />
     <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1587915042173">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/auto-complete/auto-complete.iml" filepath="$PROJECT_DIR$/auto-complete/auto-complete.iml" />
       <module fileurl="file://$PROJECT_DIR$/percolation/percolation.iml" filepath="$PROJECT_DIR$/percolation/percolation.iml" />
       <module fileurl="file://$PROJECT_DIR$/queues/queues.iml" filepath="$PROJECT_DIR$/queues/queues.iml" />
     </modules>

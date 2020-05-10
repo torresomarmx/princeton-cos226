@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/percolation/src/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/percolation/src/Percolation.java" afterDir="false" />
-    </list>
+    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,10 +157,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1589065200863" />
-    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1588717203206">
+    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1589153098903">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1588717203206" />
+    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1589153098903" />
     <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1587915042173">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auto-complete/auto-complete.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/percolation/src/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/percolation/src/Percolation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Term">
     <configuration name="Autocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -149,18 +148,18 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state width="1313" height="313" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1587221268608">
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1589065135181">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1587221268608" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1589065135181" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1586875489087">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.27.1920.1008@0.27.1920.1008" timestamp="1586875489087" />
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1587913159163">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1589065200863">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1587913159163" />
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1589065200863" />
     <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1588717203206">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

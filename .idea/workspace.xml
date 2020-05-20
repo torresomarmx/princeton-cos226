@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="" />
+    <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-puzzle/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/8-puzzle/src/Board.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/8-puzzle" />
   </component>
   <component name="ProjectId" id="1aX9xSDg0guFoNaUY5kI4Dbz2f3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,13 +34,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="/usr/local/lift/lib/stdlib.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Term">
+  <component name="RunManager" selected="Application.Board">
     <configuration name="Autocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Autocomplete" />
       <module name="auto-complete" />
@@ -52,17 +56,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Deque" />
-      <module name="queues" />
+    <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board" />
+      <module name="8-puzzle" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
-      <module name="percolation" />
-      <option name="PROGRAM_PARAMETERS" value="1000 100" />
+    <configuration name="MinPriorityQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MinPriorityQueue" />
+      <module name="8-puzzle" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,19 +78,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PercolationStats" />
-      <item itemvalue="Application.Deque" />
-      <item itemvalue="Application.BinarySearchDeluxe" />
       <item itemvalue="Application.Autocomplete" />
+      <item itemvalue="Application.BinarySearchDeluxe" />
+      <item itemvalue="Application.Board" />
+      <item itemvalue="Application.MinPriorityQueue" />
       <item itemvalue="Application.Term" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Board" />
+        <item itemvalue="Application.MinPriorityQueue" />
         <item itemvalue="Application.Term" />
         <item itemvalue="Application.BinarySearchDeluxe" />
         <item itemvalue="Application.Autocomplete" />
-        <item itemvalue="Application.Deque" />
-        <item itemvalue="Application.PercolationStats" />
       </list>
     </recent_temporary>
   </component>
@@ -105,6 +108,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="174" y="181" width="800" height="684" key="#Project_Structure" timestamp="1589280774051">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
     <state x="776" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588847877429">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -113,22 +120,22 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1587221261216" />
-    <state width="1196" height="157" key="GridCell.Tab.0.bottom" timestamp="1588857102380">
+    <state width="1231" height="281" key="GridCell.Tab.0.bottom" timestamp="1589728655488">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1196" height="157" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
-    <state width="1196" height="157" key="GridCell.Tab.0.center" timestamp="1588857102380">
+    <state width="1231" height="281" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655488" />
+    <state width="1231" height="281" key="GridCell.Tab.0.center" timestamp="1589728655487">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1196" height="157" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
-    <state width="1196" height="157" key="GridCell.Tab.0.left" timestamp="1588857102380">
+    <state width="1231" height="281" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655487" />
+    <state width="1231" height="281" key="GridCell.Tab.0.left" timestamp="1589728655486">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1196" height="157" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
-    <state width="1196" height="157" key="GridCell.Tab.0.right" timestamp="1588857102380">
+    <state width="1231" height="281" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655486" />
+    <state width="1231" height="281" key="GridCell.Tab.0.right" timestamp="1589728655487">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1196" height="157" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1588857102380" />
+    <state width="1231" height="281" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655487" />
     <state width="1313" height="313" key="GridCell.Tab.1.bottom" timestamp="1588847353409">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -153,10 +160,14 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.27.1920.1008@0.27.1920.1008" timestamp="1586875489087" />
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1589065200863">
+    <state x="73" y="256" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1589390500766">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1589065200863" />
+    <state x="73" y="256" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1008@0.27.1920.1008" timestamp="1589390500766" />
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1589646907799">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1589646907799" />
     <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1589153098903">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

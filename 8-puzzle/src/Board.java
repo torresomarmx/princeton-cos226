@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -72,11 +71,20 @@ public class Board {
 
     // is this board the goal board?
     public boolean isGoal() {
-        int currentOrderTile = 1;
+        int currentOrderedTile = 1;
+        int[][] goalTiles = new int[this.size()][];
         for (int i = 0; i < this.size(); i++) {
+            int[] subArray = new int[this.size()];
             for (int j = 0; j < this.size(); j ++) {
-                if (currentOrderTile != this.board[i][j]) return false;
+                subArray[j] = currentOrderedTile;
+                currentOrderedTile += 1;
             }
+            goalTiles[i] = subArray;
+        }
+        goalTiles[this.size()-1][this.size()-1] = 0;
+        for (int i = 0; i < this.size(); i++) {
+            for (int j = 0; j < this.size(); j++)
+                if (this.board[i][j] != goalTiles[i][j]) return false;
         }
         return true;
     }
@@ -90,7 +98,7 @@ public class Board {
        Board yBoard = (Board) y;
        if (yBoard.size() != this.size()) return false;
        for (int i = 0; i < this.size(); i++) {
-           for (int j = 0; j < this.size(); i++) {
+           for (int j = 0; j < this.size(); j++) {
                if (this.tileAt(i, j) != yBoard.tileAt(i,j))
                    return false;
            }
@@ -184,10 +192,55 @@ public class Board {
     }
 
     // // is this board solvable?
-    // public boolean isSolvable() {}
+    public boolean isSolvable() {
+        int[] boardInRowMajor = new int[this.size() * this.size() - 1];
+        int currentIdx = 0;
+        for (int i = 0; i < this.size(); i++) {
+            for (int j = 0; j < this.size(); j++)
+                if (this.board[i][j] != 0) boardInRowMajor[currentIdx++] = this.board[i][j];
+        }
+        int[] aux = new int[boardInRowMajor.length];
+        long numberOfInversions = Board.countNumberOfInversions(aux, boardInRowMajor, 0, boardInRowMajor.length -1);
+        if (this.board.length % 2 == 0) {
+            // even sized board
+            return (numberOfInversions + this.blankSquarePosition[0]) % 2 != 0;
+        }
+        // odd size board
+        return numberOfInversions % 2 == 0;
+    }
 
-    public int[] getCoordinates(int tileNumber) {
-        //TODO check that tileNumber is not out of bounds
+    private static long countNumberOfInversions(int[] auxiliaryArray, int[] listOfNumbers, int lowIdx, int highIdx) {
+        if (highIdx <= lowIdx) return 0;
+        int midIdx = lowIdx + ((highIdx - lowIdx) / 2);
+        long numberOfLeftInversions = Board.countNumberOfInversions(auxiliaryArray, listOfNumbers, lowIdx, midIdx);
+        long numberOfRightInversions = Board.countNumberOfInversions(auxiliaryArray, listOfNumbers, midIdx + 1, highIdx);
+        for (int i = lowIdx; i <= highIdx; i++)
+            auxiliaryArray[i] = listOfNumbers[i];
+
+        long numberOfSplitInversions = 0;
+        int leftPointerIdx = lowIdx;
+        int rightPointerIdx = midIdx + 1;
+        for (int i = lowIdx; i <= highIdx; i++) {
+           if (leftPointerIdx > midIdx) {
+               listOfNumbers[i] = auxiliaryArray[rightPointerIdx];
+               rightPointerIdx += 1;
+           } else if (rightPointerIdx > highIdx) {
+               listOfNumbers[i] = auxiliaryArray[leftPointerIdx];
+               leftPointerIdx += 1;
+           } else if (auxiliaryArray[leftPointerIdx] > auxiliaryArray[rightPointerIdx]) {
+               listOfNumbers[i] = auxiliaryArray[rightPointerIdx];
+               rightPointerIdx += 1;
+               numberOfSplitInversions += (midIdx - leftPointerIdx + 1);
+           } else {
+               listOfNumbers[i] = auxiliaryArray[leftPointerIdx];
+               leftPointerIdx += 1;
+           }
+        }
+
+        return numberOfLeftInversions + numberOfRightInversions + numberOfSplitInversions;
+    }
+
+    private int[] getCoordinates(int tileNumber) {
         int row = (tileNumber / this.size()) - 1;
         int col = tileNumber % this.size();
         if (col == 0) col = this.size() - 1;
@@ -198,21 +251,40 @@ public class Board {
         return new int[]{row, col};
     }
 
-    // unit testing (required)
-    public static void main(String[] args) {
-        int[][] testTiles = new int[3][3];
-        testTiles[0] = new int[]{0,1,3};
-        testTiles[1] = new int[]{4,8,2};
-        testTiles[2] = new int[]{7,6,5};
-        Board testBoard = new Board(testTiles);
-        System.out.println(testBoard);
-        System.out.println(Arrays.toString(testBoard.getCoordinates(13)));
-        System.out.println(testBoard.hamming());
-        System.out.println(testBoard.manhattan());
-        for (Board neighbor : testBoard.neighbors()) {
-            System.out.println(neighbor);
-            System.out.println("____");
-        }
-    }
+    public static void main(String[] args) throws Exception {
+//        BufferedReader fileReader = new BufferedReader(new FileReader(args[0]));
+//        String lineRead = fileReader.readLine();
+//        int[] testNums = new int[100000];
+//        int currentIdx = 0;
+//        while (lineRead != null) {
+//           testNums[currentIdx] = Integer.parseInt(lineRead);
+//           currentIdx += 1;
+//           lineRead = fileReader.readLine();
+//        }
+//        int[] aux = new int[100000];
+//        System.out.println(Board.countNumberOfInversions(aux, testNums, 0, testNums.length -1));
+//        int[] aux = new int[6];
+//        int[] testNums = new int[]{6,5,4,3,2,1};
+//        System.out.println(Board.countNumberOfInversions(aux, testNums, 0, testNums.length - 1));
+        int[][] testTiles = new int[4][];
+        testTiles[0] = new int[]{1,2,3,4};
+//        testTiles[1] = new int[]{5,6,0,8};
+//        testTiles[2] = new int[]{9,10,7,11};
+//        testTiles[3] = new int[]{13,14,15,12};
 
+        testTiles[1] = new int[]{5,6,7,8};
+        testTiles[2] = new int[]{9,10,11,12};
+        testTiles[3] = new int[]{13,14,15,0};
+        Board testBoard = new Board(testTiles);
+        System.out.println(testBoard.isSolvable());
+        System.out.println(testBoard.isGoal());
+        // System.out.println(testBoard);
+        // System.out.println(Arrays.toString(testBoard.getCoordinates(13)));
+        // System.out.println(testBoard.hamming());
+        // System.out.println(testBoard.manhattan());
+        // for (Board neighbor : testBoard.neighbors()) {
+        //     System.out.println(neighbor);
+        //     System.out.println("____");
+        // }
+    }
 }

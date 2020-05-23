@@ -41,7 +41,6 @@ public class MinPriorityQueue<Key> {
        return this.numberOfElements;
     }
 
-
     private void resize(int newSize) {
         Key[] newHeap = (Key[]) new Object[newSize];
         for (int i = 1; i < this.numberOfElements + 1; i++)
@@ -82,6 +81,11 @@ public class MinPriorityQueue<Key> {
 
     public String toString() {
         return Arrays.toString(this.heap);
+    }
+
+    public Key getMin() {
+        if (this.numberOfElements == 0) throw new NoSuchElementException();
+        return this.heap[1];
     }
     public static void main(String[] args) {
         MinPriorityQueue<Integer> mpq = new MinPriorityQueue();

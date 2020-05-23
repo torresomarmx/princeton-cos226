@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-puzzle/8-puzzle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/8-puzzle/8-puzzle.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8-puzzle/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/8-puzzle/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-puzzle/src/MinPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/8-puzzle/src/MinPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-puzzle/stale_outputs_checked" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto-complete/auto-complete.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auto-complete/auto-complete.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,63 +39,81 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/8-puzzle/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="Application.Board">
-    <configuration name="Autocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Autocomplete" />
-      <module name="auto-complete" />
-      <option name="PROGRAM_PARAMETERS" value="wiktionary.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchDeluxe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BinarySearchDeluxe" />
-      <module name="auto-complete" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Board" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestBoard.testIsNotSolvable">
+    <configuration name="TestBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="8-puzzle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBoard" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinPriorityQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MinPriorityQueue" />
+    <configuration name="TestBoard.testIsNotSolvable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="8-puzzle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBoard" />
+      <option name="METHOD_NAME" value="testIsNotSolvable" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Term" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Term" />
-      <module name="auto-complete" />
+    <configuration name="TestBoard.testIsSolvable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="8-puzzle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBoard" />
+      <option name="METHOD_NAME" value="testIsSolvable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMinPriorityQueue.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="8-puzzle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMinPriorityQueue" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMinPriorityQueue.testGetMinWithoutDeleting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="8-puzzle" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestMinPriorityQueue" />
+      <option name="METHOD_NAME" value="testGetMinWithoutDeleting" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Autocomplete" />
-      <item itemvalue="Application.BinarySearchDeluxe" />
-      <item itemvalue="Application.Board" />
-      <item itemvalue="Application.MinPriorityQueue" />
-      <item itemvalue="Application.Term" />
+      <item itemvalue="JUnit.TestMinPriorityQueue.testDelete" />
+      <item itemvalue="JUnit.TestMinPriorityQueue.testGetMinWithoutDeleting" />
+      <item itemvalue="JUnit.TestBoard" />
+      <item itemvalue="JUnit.TestBoard.testIsSolvable" />
+      <item itemvalue="JUnit.TestBoard.testIsNotSolvable" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Board" />
-        <item itemvalue="Application.MinPriorityQueue" />
-        <item itemvalue="Application.Term" />
-        <item itemvalue="Application.BinarySearchDeluxe" />
-        <item itemvalue="Application.Autocomplete" />
+        <item itemvalue="JUnit.TestBoard.testIsNotSolvable" />
+        <item itemvalue="JUnit.TestBoard.testIsSolvable" />
+        <item itemvalue="JUnit.TestBoard" />
+        <item itemvalue="JUnit.TestMinPriorityQueue.testGetMinWithoutDeleting" />
+        <item itemvalue="JUnit.TestMinPriorityQueue.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -112,50 +135,62 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="776" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588847877429">
+    <state x="498" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590188735075">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="776" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1588847877428" />
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1587221261216">
+    <state x="498" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590188735075" />
+    <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1587221261216" />
-    <state width="1231" height="281" key="GridCell.Tab.0.bottom" timestamp="1589728655488">
+    <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590162456411" />
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1590189479001">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1231" height="281" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655488" />
-    <state width="1231" height="281" key="GridCell.Tab.0.center" timestamp="1589728655487">
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590189479001" />
+    <state x="319" y="268" key="#xdebugger.evaluate" timestamp="1590161211428">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1231" height="281" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655487" />
-    <state width="1231" height="281" key="GridCell.Tab.0.left" timestamp="1589728655486">
+    <state x="319" y="268" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1590161211428" />
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1590189554161">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1231" height="281" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655486" />
-    <state width="1231" height="281" key="GridCell.Tab.0.right" timestamp="1589728655487">
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1590189554161" />
+    <state width="909" height="217" key="GridCell.Tab.0.bottom" timestamp="1590255372224">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1231" height="281" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1589728655487" />
-    <state width="1313" height="313" key="GridCell.Tab.1.bottom" timestamp="1588847353409">
+    <state width="909" height="217" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590255372224" />
+    <state width="909" height="217" key="GridCell.Tab.0.center" timestamp="1590255372222">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1313" height="313" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
-    <state width="1313" height="313" key="GridCell.Tab.1.center" timestamp="1588847353409">
+    <state width="909" height="217" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590255372222" />
+    <state width="909" height="217" key="GridCell.Tab.0.left" timestamp="1590255372222">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1313" height="313" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
-    <state width="1313" height="313" key="GridCell.Tab.1.left" timestamp="1588847353408">
+    <state width="909" height="217" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590255372222" />
+    <state width="909" height="217" key="GridCell.Tab.0.right" timestamp="1590255372223">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1313" height="313" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353408" />
-    <state width="1313" height="313" key="GridCell.Tab.1.right" timestamp="1588847353409">
+    <state width="909" height="217" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590255372223" />
+    <state width="1285" height="362" key="GridCell.Tab.1.bottom" timestamp="1590188304277">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1313" height="313" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1588847353409" />
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1589065135181">
+    <state width="1285" height="362" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304277" />
+    <state width="1285" height="362" key="GridCell.Tab.1.center" timestamp="1590188304276">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1589065135181" />
+    <state width="1285" height="362" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
+    <state width="1285" height="362" key="GridCell.Tab.1.left" timestamp="1590188304276">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1285" height="362" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
+    <state width="1285" height="362" key="GridCell.Tab.1.right" timestamp="1590188304276">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1285" height="362" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1590189593219">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1590189593219" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1586875489087">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -164,17 +199,32 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="73" y="256" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1008@0.27.1920.1008" timestamp="1589390500766" />
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1589646907799">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1590067982355">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1589646907799" />
-    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1589153098903">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590067982355" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590088612672">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1589153098903" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590088612672" />
+    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1590180921551">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1590180921551" />
     <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1587915042173">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="488" y="268" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1587915042173" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

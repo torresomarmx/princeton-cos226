@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kdtrees/kdtrees.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8-puzzle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/8-puzzle/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/8-puzzle" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aX9xSDg0guFoNaUY5kI4Dbz2f3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -147,22 +150,22 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1590189554161" />
-    <state width="1169" height="162" key="GridCell.Tab.0.bottom" timestamp="1590257052734">
+    <state width="1169" height="200" key="GridCell.Tab.0.bottom" timestamp="1590360830097">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="162" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590257052734" />
-    <state width="1169" height="162" key="GridCell.Tab.0.center" timestamp="1590257052733">
+    <state width="1169" height="200" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830097" />
+    <state width="1169" height="200" key="GridCell.Tab.0.center" timestamp="1590360830094">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="162" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590257052733" />
-    <state width="1169" height="162" key="GridCell.Tab.0.left" timestamp="1590257052733">
+    <state width="1169" height="200" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830094" />
+    <state width="1169" height="200" key="GridCell.Tab.0.left" timestamp="1590360830093">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="162" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590257052733" />
-    <state width="1169" height="162" key="GridCell.Tab.0.right" timestamp="1590257052734">
+    <state width="1169" height="200" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830093" />
+    <state width="1169" height="200" key="GridCell.Tab.0.right" timestamp="1590360830096">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="162" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590257052734" />
+    <state width="1169" height="200" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830096" />
     <state width="1285" height="362" key="GridCell.Tab.1.bottom" timestamp="1590188304277">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -199,10 +202,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590088612672" />
-    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1590180921551">
+    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1590406965102">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1590180921551" />
+    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1590406965102" />
     <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1587915042173">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

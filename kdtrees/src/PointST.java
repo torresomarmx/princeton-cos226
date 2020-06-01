@@ -1,5 +1,7 @@
 import edu.princeton.cs.algs4.Point2D;
+import edu.princeton.cs.algs4.RectHV;
 
+import java.util.ArrayList;
 import java.util.TreeMap;
 
 public class PointST<Value> {
@@ -41,12 +43,40 @@ public class PointST<Value> {
     }
 
     // all points that are inside the rectangle (or on the boundary)
-    public Iterable<Point2D> range(RectHV rect)
+    public Iterable<Point2D> range(RectHV rect) {
+        ArrayList<Point2D> rangePoints = new ArrayList<>();
+        for (Point2D point : this.map.navigableKeySet())
+            if (rect.contains(point)) rangePoints.add(point);
+        return rangePoints;
+    }
 
     // a nearest neighbor of point p; null if the symbol table is empty
-    public Point2D nearest(Point2D p)
+    public Point2D nearest(Point2D p) {
+        Point2D nearestPoint = null;
+        for (Point2D point : this.map.navigableKeySet()) {
+            if (nearestPoint == null) {
+                nearestPoint = point;
+            } else if (point.distanceSquaredTo(p) < nearestPoint.distanceSquaredTo(p)) {
+                nearestPoint = point;
+            }
+        }
+        return nearestPoint;
+    }
 
     // unit testing (required)
-    public static void main(String[] args)
+    public static void main(String[] args) {
+        Point2D p1 = new Point2D(0.0, 1.0);
+        Point2D p2 = new Point2D(4.0, 6.0);
+        Point2D p3 = new Point2D(5.0, 8.0);
+        PointST<Integer> pointST = new PointST<>();
+        pointST.put(p1, 1);
+        pointST.put(p2, 2);
+        pointST.put(p2, 3);
+        System.out.println(pointST.nearest(new Point2D(5.0, 2.0)));
+        RectHV rect = new RectHV(0.0, 0.0, 4.0, 7.0);
+        for (Point2D point : pointST.range(rect)) {
+            System.out.println(point);
+        }
+    }
 
 }

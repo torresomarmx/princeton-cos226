@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdtrees/kdtrees.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/kdtrees.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kdtrees/src/PointST.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/PointST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,14 @@
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solver">
+  <component name="RunManager" selected="Application.PointST">
+    <configuration name="PointST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PointST" />
+      <module name="kdtrees" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solver" />
       <module name="8-puzzle" />
@@ -84,30 +90,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMinPriorityQueue.testGetMinWithoutDeleting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="8-puzzle" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestMinPriorityQueue" />
-      <option name="METHOD_NAME" value="testGetMinWithoutDeleting" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Solver" />
-      <item itemvalue="JUnit.TestMinPriorityQueue.testGetMinWithoutDeleting" />
       <item itemvalue="JUnit.TestBoard" />
       <item itemvalue="JUnit.TestBoard.testIsSolvable" />
       <item itemvalue="JUnit.TestBoard.testIsNotSolvable" />
+      <item itemvalue="Application.PointST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PointST" />
         <item itemvalue="Application.Solver" />
         <item itemvalue="JUnit.TestBoard.testIsNotSolvable" />
         <item itemvalue="JUnit.TestBoard.testIsSolvable" />
         <item itemvalue="JUnit.TestBoard" />
-        <item itemvalue="JUnit.TestMinPriorityQueue.testGetMinWithoutDeleting" />
       </list>
     </recent_temporary>
   </component>
@@ -149,38 +145,38 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1590410177512" />
-    <state width="1169" height="200" key="GridCell.Tab.0.bottom" timestamp="1590360830097">
+    <state width="1644" height="200" key="GridCell.Tab.0.bottom" timestamp="1590845516140">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="200" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830097" />
-    <state width="1169" height="200" key="GridCell.Tab.0.center" timestamp="1590360830094">
+    <state width="1644" height="200" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590845516140" />
+    <state width="1644" height="200" key="GridCell.Tab.0.center" timestamp="1590845516139">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="200" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830094" />
-    <state width="1169" height="200" key="GridCell.Tab.0.left" timestamp="1590360830093">
+    <state width="1644" height="200" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590845516139" />
+    <state width="1644" height="200" key="GridCell.Tab.0.left" timestamp="1590845516139">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="200" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830093" />
-    <state width="1169" height="200" key="GridCell.Tab.0.right" timestamp="1590360830096">
+    <state width="1644" height="200" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590845516139" />
+    <state width="1644" height="200" key="GridCell.Tab.0.right" timestamp="1590845516140">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1169" height="200" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590360830096" />
-    <state width="1285" height="362" key="GridCell.Tab.1.bottom" timestamp="1590188304277">
+    <state width="1644" height="200" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590845516140" />
+    <state width="1285" height="362" key="GridCell.Tab.1.bottom" timestamp="1590752716061">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1285" height="362" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304277" />
-    <state width="1285" height="362" key="GridCell.Tab.1.center" timestamp="1590188304276">
+    <state width="1285" height="362" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1590752716061" />
+    <state width="1285" height="362" key="GridCell.Tab.1.center" timestamp="1590752716061">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1285" height="362" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
-    <state width="1285" height="362" key="GridCell.Tab.1.left" timestamp="1590188304276">
+    <state width="1285" height="362" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1590752716061" />
+    <state width="1285" height="362" key="GridCell.Tab.1.left" timestamp="1590752716060">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1285" height="362" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
-    <state width="1285" height="362" key="GridCell.Tab.1.right" timestamp="1590188304276">
+    <state width="1285" height="362" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1590752716060" />
+    <state width="1285" height="362" key="GridCell.Tab.1.right" timestamp="1590752716061">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1285" height="362" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590188304276" />
+    <state width="1285" height="362" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1590752716061" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1590410190277">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -193,14 +189,14 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="73" y="256" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1008@0.27.1920.1008" timestamp="1589390500766" />
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1590067982355">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1590840094338">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590067982355" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590412109767">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590840094338" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590849706711">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590412109767" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590849706711" />
     <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1590406965102">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

@@ -141,8 +141,8 @@ public class KdTreeST<Value> {
     private void range(RectHV rect, Node node, ArrayList<Point2D> pointsInsideRect) {
        if (node == null || !node.getRect().intersects(rect)) return;
        if (rect.contains(node.getP())) pointsInsideRect.add(node.getP());
-       this.range(rect, node, pointsInsideRect);
-       this.range(rect, node, pointsInsideRect);
+       this.range(rect, node.getLeft(), pointsInsideRect);
+       this.range(rect, node.getRight(), pointsInsideRect);
     }
 
     // a nearest neighbor of point p; null if the symbol table is empty

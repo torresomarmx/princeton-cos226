@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdtrees/src/PointST.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/PointST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

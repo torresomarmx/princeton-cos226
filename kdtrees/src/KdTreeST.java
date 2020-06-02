@@ -166,8 +166,4 @@ public class KdTreeST<Value> {
         closestSoFar = nearest(p, nextNodeToLookAt, closestSoFar);
         return closestSoFar;
     }
-
-    // unit testing (required)
-    public static void main(String[] args)
-
 }

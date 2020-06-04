@@ -22,11 +22,14 @@ public class NearestNeighborVisualizer {
         // process nearest neighbor queries
         StdDraw.enableDoubleBuffering();
         while (true) {
+            System.out.println("--");
 
             // the location (x, y) of the mouse
             double x = StdDraw.mouseX();
             double y = StdDraw.mouseY();
             Point2D query = new Point2D(x, y);
+            System.out.println("point:");
+            System.out.println(query);
 
             // draw all of the points
             StdDraw.clear();
@@ -41,12 +44,16 @@ public class NearestNeighborVisualizer {
             StdDraw.setPenColor(StdDraw.RED);
             Point2D bruteNearest = brute.nearest(query);
             if (bruteNearest != null) bruteNearest.draw();
+            System.out.println("Brute:");
+            System.out.println(bruteNearest);
             StdDraw.setPenRadius(0.02);
 
             // draw in blue the nearest neighbor according to the kd-tree algorithm
             StdDraw.setPenColor(StdDraw.BLUE);
             Point2D kdtreeNearest = kdtree.nearest(query);
             if (kdtreeNearest != null) kdtreeNearest.draw();
+            System.out.println("KD:");
+            System.out.println(kdtreeNearest);
             StdDraw.show();
             StdDraw.pause(20);
         }

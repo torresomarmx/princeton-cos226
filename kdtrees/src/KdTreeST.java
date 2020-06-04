@@ -1,8 +1,11 @@
 import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class KdTreeST<Value> {
     private class Node {
@@ -11,35 +14,57 @@ public class KdTreeST<Value> {
         private Node left;
         private Node right;
         private RectHV rect;
+
         public Node(Point2D p, Value v, RectHV rect) {
             this.p = p;
             this.v = v;
             this.rect = rect;
         }
 
-        public void setP(Point2D p) { this.p = p; }
+        public void setP(Point2D p) {
+            this.p = p;
+        }
 
-        public Point2D getP() { return this.p; }
+        public Point2D getP() {
+            return this.p;
+        }
 
-        public void setV(Value v) { this.v = v; }
+        public void setV(Value v) {
+            this.v = v;
+        }
 
-        public Value getV() { return this.v; }
+        public Value getV() {
+            return this.v;
+        }
 
-        public void setLeft(Node left) { this.left = left; }
+        public void setLeft(Node left) {
+            this.left = left;
+        }
 
-        public Node getLeft() { return this.left; }
+        public Node getLeft() {
+            return this.left;
+        }
 
-        public void setRight(Node right) { this.right = right; }
+        public void setRight(Node right) {
+            this.right = right;
+        }
 
-        public Node getRight() { return this.right; }
+        public Node getRight() {
+            return this.right;
+        }
 
-        public void setRect(RectHV rect) { this.rect = rect; }
+        public void setRect(RectHV rect) {
+            this.rect = rect;
+        }
 
-        public RectHV getRect() { return this.rect; }
+        public RectHV getRect() {
+            return this.rect;
+        }
     }
 
     private int numberOfKeys;
     private Node rootNode;
+
     // construct an empty symbol table of points
     public KdTreeST() {
         this.rootNode = null;
@@ -76,7 +101,7 @@ public class KdTreeST<Value> {
         if (compareInt < 0) {
             // move left/down, depending on treeLevel
             rect = treeLevel % 2 == 0 ?
-                    new RectHV(rect.xmin(), rect.ymin(), node.getP().x(),rect.ymax()) :
+                    new RectHV(rect.xmin(), rect.ymin(), node.getP().x(), rect.ymax()) :
                     new RectHV(rect.xmin(), rect.ymin(), rect.xmax(), node.getP().y());
             node.setLeft(this.put(node.getLeft(), p, val, treeLevel + 1, rect));
         } else if (!node.getP().equals(p)) {
@@ -123,7 +148,7 @@ public class KdTreeST<Value> {
         ArrayDeque<Node> nodesDeque = new ArrayDeque<>();
         nodesDeque.add(this.rootNode);
         while (nodesDeque.size() != 0) {
-            Node currentNode = nodesDeque.getFirst();
+            Node currentNode = nodesDeque.removeFirst();
             levelOrderPoints.add(currentNode.getP());
             if (currentNode.getLeft() != null) nodesDeque.add(currentNode.getLeft());
             if (currentNode.getRight() != null) nodesDeque.add(currentNode.getRight());
@@ -139,31 +164,61 @@ public class KdTreeST<Value> {
     }
 
     private void range(RectHV rect, Node node, ArrayList<Point2D> pointsInsideRect) {
-       if (node == null || !node.getRect().intersects(rect)) return;
-       if (rect.contains(node.getP())) pointsInsideRect.add(node.getP());
-       this.range(rect, node.getLeft(), pointsInsideRect);
-       this.range(rect, node.getRight(), pointsInsideRect);
+        if (node == null || !node.getRect().intersects(rect)) return;
+        if (rect.contains(node.getP())) pointsInsideRect.add(node.getP());
+        this.range(rect, node.getLeft(), pointsInsideRect);
+        this.range(rect, node.getRight(), pointsInsideRect);
     }
 
     // a nearest neighbor of point p; null if the symbol table is empty
     public Point2D nearest(Point2D p) {
+        System.out.println("Nearest");
         if (this.numberOfKeys == 0) return null;
         return nearest(p, this.rootNode, this.rootNode.getP());
     }
 
     private Point2D nearest(Point2D p, Node node, Point2D closestSoFar) {
-        if (node == null || node.getRect().distanceSquaredTo(p) >= closestSoFar.distanceSquaredTo(p)) return closestSoFar;
+        System.out.println("Closest" + closestSoFar);
+        if (node == null || node.getRect().distanceSquaredTo(p) >= closestSoFar.distanceSquaredTo(p)) {
+            System.out.println("Skipping");
+            if (node == null) System.out.println("node is null");
+            if (node != null) System.out.println(node.getP());
+            System.out.println("--");
+            return closestSoFar;
+        }
+        System.out.println(node.getP());
         if (node.getP().distanceSquaredTo(p) < closestSoFar.distanceSquaredTo(p))
             closestSoFar = node.getP();
 
         Node nextNodeToLookAt = node.getRight();
         if (node.getLeft() != null && node.getLeft().getRect().contains(p))
             closestSoFar = nearest(p, node.getLeft(), closestSoFar);
-        else if (node.getRight() != null && node.getRight().getRect().contains(p)) {
+        else {
             closestSoFar = nearest(p, node.getRight(), closestSoFar);
             nextNodeToLookAt = node.getLeft();
         }
         closestSoFar = nearest(p, nextNodeToLookAt, closestSoFar);
         return closestSoFar;
+    }
+
+    public static void main(String[] args) throws Exception {
+        String filename = args[0];
+        Scanner scanner = new Scanner(new BufferedInputStream(new FileInputStream(filename)));
+
+        KdTreeST<Integer> kdtree = new KdTreeST<>();
+        int idx = 0;
+        while (scanner.hasNext()) {
+            double x = scanner.nextDouble();
+            double y = scanner.nextDouble();
+            Point2D p = new Point2D(x,y);
+            kdtree.put(p, idx++);
+        }
+        Point2D testPoint = new Point2D(.330, .281);
+        System.out.println(kdtree.points());
+        System.out.println(kdtree.nearest(testPoint));
+        System.out.println("---");
+        System.out.println(testPoint.distanceSquaredTo(new Point2D(.372, .497)));
+        System.out.println(testPoint.distanceSquaredTo(new Point2D(.144, .179)));
+        System.out.println(testPoint.distanceSquaredTo(new Point2D(.417, .362)));
     }
 }

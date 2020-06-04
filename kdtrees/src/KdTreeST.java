@@ -172,21 +172,14 @@ public class KdTreeST<Value> {
 
     // a nearest neighbor of point p; null if the symbol table is empty
     public Point2D nearest(Point2D p) {
-        System.out.println("Nearest");
         if (this.numberOfKeys == 0) return null;
         return nearest(p, this.rootNode, this.rootNode.getP());
     }
 
     private Point2D nearest(Point2D p, Node node, Point2D closestSoFar) {
-        System.out.println("Closest" + closestSoFar);
-        if (node == null || node.getRect().distanceSquaredTo(p) >= closestSoFar.distanceSquaredTo(p)) {
-            System.out.println("Skipping");
-            if (node == null) System.out.println("node is null");
-            if (node != null) System.out.println(node.getP());
-            System.out.println("--");
+        if (node == null || node.getRect().distanceSquaredTo(p) >= closestSoFar.distanceSquaredTo(p))
             return closestSoFar;
-        }
-        System.out.println(node.getP());
+
         if (node.getP().distanceSquaredTo(p) < closestSoFar.distanceSquaredTo(p))
             closestSoFar = node.getP();
 
@@ -198,6 +191,7 @@ public class KdTreeST<Value> {
             nextNodeToLookAt = node.getLeft();
         }
         closestSoFar = nearest(p, nextNodeToLookAt, closestSoFar);
+
         return closestSoFar;
     }
 

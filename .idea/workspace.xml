@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kdtrees/src/NearestNeighborVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/NearestNeighborVisualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,16 +211,6 @@
           <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kdtrees/src/KdTreeST.java</url>
-          <line>217</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kdtrees/src/KdTreeST.java</url>
-          <line>211</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

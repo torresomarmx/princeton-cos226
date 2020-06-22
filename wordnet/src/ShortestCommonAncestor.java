@@ -1,5 +1,6 @@
 import edu.princeton.cs.algs4.Digraph;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -13,7 +14,7 @@ public class ShortestCommonAncestor {
 
     // length of shortest ancestral path between v and w
     public int length(int v, int w) {
-        return this.getShortestCommonAncestor(v,w)[1];
+        return this.getShortestCommonAncestor(Collections.singletonList(v), Collections.singletonList(w))[1];
     }
 
     private void getVerticesInPathToRoot(int v, int currentPathLength, HashMap<Integer, Integer> vertexInPathToLengthOfPath) {
@@ -26,19 +27,19 @@ public class ShortestCommonAncestor {
         }
     }
 
-    private int[] getShortestCommonAncestor(int v, int w) {
-        HashMap<Integer, Integer> vVertexInRootPathToMinPathLength = new HashMap<>();
-        HashMap<Integer, Integer> wVertexInRootPathToMinPathLength = new HashMap<>();
-        this.getVerticesInPathToRoot(v, 0, vVertexInRootPathToMinPathLength);
-        this.getVerticesInPathToRoot(w, 0, wVertexInRootPathToMinPathLength);
+    private int[] getShortestCommonAncestor(Iterable<Integer> subsetA, Iterable<Integer> subsetB) {
+        HashMap<Integer, Integer> subsetAVertexInRootPathToMinPathLength = new HashMap<>();
+        HashMap<Integer, Integer> subsetBVertexInRootPathToMinPathLength = new HashMap<>();
+        for (Integer subsetAVertex : subsetA) this.getVerticesInPathToRoot(subsetAVertex, 0, subsetAVertexInRootPathToMinPathLength);
+        for (Integer subsetBVertex : subsetB) this.getVerticesInPathToRoot(subsetBVertex, 0, subsetBVertexInRootPathToMinPathLength);
         HashSet<Integer> sharedVertices = new HashSet<>();
-        for (Integer vertex : vVertexInRootPathToMinPathLength.keySet())
-            if (wVertexInRootPathToMinPathLength.containsKey(vertex)) sharedVertices.add(vertex);
+        for (Integer vertex: subsetAVertexInRootPathToMinPathLength.keySet())
+            if (subsetBVertexInRootPathToMinPathLength.containsKey(vertex)) sharedVertices.add(vertex);
         int shortestCommonAncestor = -1;
         int lengthOfShortestAncestralPath= Integer.MAX_VALUE;
         for (Integer sharedVertex : sharedVertices) {
-            if (vVertexInRootPathToMinPathLength.get(sharedVertex) + wVertexInRootPathToMinPathLength.get(sharedVertex) < lengthOfShortestAncestralPath) {
-                lengthOfShortestAncestralPath = vVertexInRootPathToMinPathLength.get(sharedVertex) + wVertexInRootPathToMinPathLength.get(sharedVertex);
+            if (subsetAVertexInRootPathToMinPathLength.get(sharedVertex) + subsetBVertexInRootPathToMinPathLength.get(sharedVertex) < lengthOfShortestAncestralPath) {
+                lengthOfShortestAncestralPath = subsetAVertexInRootPathToMinPathLength.get(sharedVertex) + subsetBVertexInRootPathToMinPathLength.get(sharedVertex);
                 shortestCommonAncestor = sharedVertex;
             }
         }
@@ -47,14 +48,18 @@ public class ShortestCommonAncestor {
 
     // a shortest common ancestor of vertices v and w
     public int ancestor(int v, int w) {
-        return this.getShortestCommonAncestor(v,w)[0];
+        return this.getShortestCommonAncestor(Collections.singletonList(v), Collections.singletonList(w))[0];
     }
 
     // length of shortest ancestral path of vertex subsets A and B
-    public int lengthSubset(Iterable<Integer> subsetA, Iterable<Integer> subsetB)
+    public int lengthSubset(Iterable<Integer> subsetA, Iterable<Integer> subsetB) {
+        return this.getShortestCommonAncestor(subsetA, subsetB)[1];
+    }
 
     // a shortest common ancestor of vertex subsets A and B
-    public int ancestorSubset(Iterable<Integer> subsetA, Iterable<Integer> subsetB)
+    public int ancestorSubset(Iterable<Integer> subsetA, Iterable<Integer> subsetB) {
+        return this.getShortestCommonAncestor(subsetA, subsetB)[0];
+    }
 
     // unit testing (required)
     public static void main(String[] args)

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" beforeDir="false" afterPath="$PROJECT_DIR$/kdtrees/src/KdTreeST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordnet/src/WordNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/wordnet/src/WordNet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +42,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wordnet/text-files" />
       <recent name="$PROJECT_DIR$/kdtrees/text-files" />
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NearestNeighborVisualizer">
+  <component name="RunManager" selected="Application.WordNet">
     <configuration name="KdTreeST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KdTreeST" />
       <module name="kdtrees" />
@@ -79,29 +82,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solver" />
-      <module name="8-puzzle" />
-      <option name="PROGRAM_PARAMETERS" value="puzzle05.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8-puzzle/text-files" />
+    <configuration name="WordNet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordNet" />
+      <module name="wordnet" />
+      <option name="PROGRAM_PARAMETERS" value="text-files/synsets.txt text-files/hypernyms.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wordnet" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solver" />
       <item itemvalue="Application.PointST" />
       <item itemvalue="Application.RangeSearchVisualizer" />
       <item itemvalue="Application.NearestNeighborVisualizer" />
       <item itemvalue="Application.KdTreeST" />
+      <item itemvalue="Application.WordNet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordNet" />
         <item itemvalue="Application.NearestNeighborVisualizer" />
         <item itemvalue="Application.KdTreeST" />
         <item itemvalue="Application.RangeSearchVisualizer" />
         <item itemvalue="Application.PointST" />
-        <item itemvalue="Application.Solver" />
       </list>
     </recent_temporary>
   </component>
@@ -123,62 +126,62 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="700" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591269153453">
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592251402700">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="700" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1591269153453" />
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592251402700" />
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590162456411" />
-    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1590410188777">
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1591905882639">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590410188777" />
-    <state x="319" y="268" key="#xdebugger.evaluate" timestamp="1590161211428">
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1591905882639" />
+    <state x="319" y="268" key="#xdebugger.evaluate" timestamp="1592251866422">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="319" y="268" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1590161211428" />
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1590410177512">
+    <state x="319" y="268" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1592251866422" />
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1591905866785">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1590410177512" />
-    <state width="1482" height="330" key="GridCell.Tab.0.bottom" timestamp="1591274892569">
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1591905866785" />
+    <state width="1622" height="280" key="GridCell.Tab.0.bottom" timestamp="1592253014371">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="330" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1591274892569" />
-    <state width="1482" height="330" key="GridCell.Tab.0.center" timestamp="1591274892567">
+    <state width="1622" height="280" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
+    <state width="1622" height="280" key="GridCell.Tab.0.center" timestamp="1592253014371">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="330" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1591274892567" />
-    <state width="1482" height="330" key="GridCell.Tab.0.left" timestamp="1591274892566">
+    <state width="1622" height="280" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
+    <state width="1622" height="280" key="GridCell.Tab.0.left" timestamp="1592253014371">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="330" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1591274892566" />
-    <state width="1482" height="330" key="GridCell.Tab.0.right" timestamp="1591274892568">
+    <state width="1622" height="280" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
+    <state width="1622" height="280" key="GridCell.Tab.0.right" timestamp="1592253014371">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="330" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1591274892568" />
-    <state width="1482" height="184" key="GridCell.Tab.1.bottom" timestamp="1591269352974">
+    <state width="1622" height="280" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
+    <state width="1622" height="280" key="GridCell.Tab.1.bottom" timestamp="1592253014372">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="184" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1591269352974" />
-    <state width="1482" height="184" key="GridCell.Tab.1.center" timestamp="1591269352974">
+    <state width="1622" height="280" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
+    <state width="1622" height="280" key="GridCell.Tab.1.center" timestamp="1592253014372">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="184" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1591269352974" />
-    <state width="1482" height="184" key="GridCell.Tab.1.left" timestamp="1591269352974">
+    <state width="1622" height="280" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
+    <state width="1622" height="280" key="GridCell.Tab.1.left" timestamp="1592253014372">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="184" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1591269352974" />
-    <state width="1482" height="184" key="GridCell.Tab.1.right" timestamp="1591269352974">
+    <state width="1622" height="280" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
+    <state width="1622" height="280" key="GridCell.Tab.1.right" timestamp="1592253014372">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1482" height="184" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1591269352974" />
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1590410190277">
+    <state width="1622" height="280" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1591905885308">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1590410190277" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1591905885308" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1586875489087">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -187,22 +190,26 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="73" y="256" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1008@0.27.1920.1008" timestamp="1589390500766" />
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1590840094338">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1592247868516">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1590840094338" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591268426471">
+    <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592338814834">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1591268426471" />
-    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1590406965102">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1592338814834" />
+    <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1591806291410">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1590406965102" />
-    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1591274029048">
+    <state x="303" y="135" width="1372" height="803" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1591806291410" />
+    <state x="721" y="237" key="run.anything.popup" timestamp="1592249539251">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1591274029048" />
+    <state x="721" y="237" key="run.anything.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1592249539251" />
+    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1591806329412">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1591806329412" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

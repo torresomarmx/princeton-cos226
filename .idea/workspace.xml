@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordnet/src/WordNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/wordnet/src/WordNet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +135,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1590162456411" />
+    <state x="689" y="27" width="769" height="1008" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592828530445">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="689" y="27" width="769" height="1008" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592828530445" />
     <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1591905882639">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -223,11 +227,6 @@
           <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

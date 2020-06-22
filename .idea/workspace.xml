@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordNet">
+  <component name="RunManager" selected="Application.ShortestCommonAncestor">
     <configuration name="KdTreeST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KdTreeST" />
       <module name="kdtrees" />
@@ -64,18 +65,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PointST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PointST" />
-      <module name="kdtrees" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RangeSearchVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RangeSearchVisualizer" />
       <module name="kdtrees" />
       <option name="PROGRAM_PARAMETERS" value="text-files/input10.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kdtrees" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortestCommonAncestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ShortestCommonAncestor" />
+      <module name="wordnet" />
+      <option name="PROGRAM_PARAMETERS" value="text-files/digraph1.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wordnet" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,19 +93,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PointST" />
       <item itemvalue="Application.RangeSearchVisualizer" />
       <item itemvalue="Application.NearestNeighborVisualizer" />
       <item itemvalue="Application.KdTreeST" />
       <item itemvalue="Application.WordNet" />
+      <item itemvalue="Application.ShortestCommonAncestor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShortestCommonAncestor" />
         <item itemvalue="Application.WordNet" />
         <item itemvalue="Application.NearestNeighborVisualizer" />
         <item itemvalue="Application.KdTreeST" />
         <item itemvalue="Application.RangeSearchVisualizer" />
-        <item itemvalue="Application.PointST" />
       </list>
     </recent_temporary>
   </component>
@@ -124,10 +127,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592251402700">
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592827829189">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592251402700" />
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592827829189" />
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -144,38 +147,38 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1591905866785" />
-    <state width="1622" height="280" key="GridCell.Tab.0.bottom" timestamp="1592253014371">
+    <state width="1622" height="269" key="GridCell.Tab.0.bottom" timestamp="1592828140712">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
-    <state width="1622" height="280" key="GridCell.Tab.0.center" timestamp="1592253014371">
+    <state width="1622" height="269" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
+    <state width="1622" height="269" key="GridCell.Tab.0.center" timestamp="1592828140711">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
-    <state width="1622" height="280" key="GridCell.Tab.0.left" timestamp="1592253014371">
+    <state width="1622" height="269" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140711" />
+    <state width="1622" height="269" key="GridCell.Tab.0.left" timestamp="1592828140709">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
-    <state width="1622" height="280" key="GridCell.Tab.0.right" timestamp="1592253014371">
+    <state width="1622" height="269" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140709" />
+    <state width="1622" height="269" key="GridCell.Tab.0.right" timestamp="1592828140711">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014371" />
-    <state width="1622" height="280" key="GridCell.Tab.1.bottom" timestamp="1592253014372">
+    <state width="1622" height="269" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140711" />
+    <state width="1622" height="269" key="GridCell.Tab.1.bottom" timestamp="1592828140713">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
-    <state width="1622" height="280" key="GridCell.Tab.1.center" timestamp="1592253014372">
+    <state width="1622" height="269" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140713" />
+    <state width="1622" height="269" key="GridCell.Tab.1.center" timestamp="1592828140712">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
-    <state width="1622" height="280" key="GridCell.Tab.1.left" timestamp="1592253014372">
+    <state width="1622" height="269" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
+    <state width="1622" height="269" key="GridCell.Tab.1.left" timestamp="1592828140712">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
-    <state width="1622" height="280" key="GridCell.Tab.1.right" timestamp="1592253014372">
+    <state width="1622" height="269" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
+    <state width="1622" height="269" key="GridCell.Tab.1.right" timestamp="1592828140712">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592253014372" />
+    <state width="1622" height="269" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1591905885308">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -192,10 +195,14 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592338814834">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592827233854">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1592338814834" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1592827233854" />
+    <state x="724" y="133" width="710" height="780" key="find.popup" timestamp="1592827923941">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="724" y="133" width="710" height="780" key="find.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1592827923941" />
     <state x="303" y="135" width="1372" height="803" key="new project wizard" timestamp="1591806291410">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -216,6 +223,11 @@
           <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wordnet/src/ShortestCommonAncestor.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

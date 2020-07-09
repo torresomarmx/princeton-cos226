@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordnet/src/WordNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/wordnet/src/WordNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seam-carving/seam-carving.iml" beforeDir="false" afterPath="$PROJECT_DIR$/seam-carving/seam-carving.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,10 +139,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="689" y="27" width="769" height="1008" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592828530445" />
-    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1591905882639">
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1594227842192">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1591905882639" />
+    <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1594227842192" />
     <state x="319" y="268" key="#xdebugger.evaluate" timestamp="1592251866422">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -183,10 +183,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state width="1622" height="269" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1591905885308">
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1594227844079">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1591905885308" />
+    <state x="357" y="134" width="1122" height="737" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1594227844079" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1586875489087">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -199,10 +199,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592827233854">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594219969272">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1592827233854" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1594219969272" />
     <state x="724" y="133" width="710" height="780" key="find.popup" timestamp="1592827923941">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -215,10 +215,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="721" y="237" key="run.anything.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1592249539251" />
-    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1591806329412">
+    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1594219950206">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1591806329412" />
+    <state x="488" y="268" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1594219950206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

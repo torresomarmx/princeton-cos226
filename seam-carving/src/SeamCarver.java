@@ -1,6 +1,8 @@
 import edu.princeton.cs.algs4.Picture;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Stack;
 
 public class SeamCarver {
 
@@ -51,7 +53,72 @@ public class SeamCarver {
     public int[] findHorizontalSeam()
 
     // sequence of indices for vertical seam
-    public int[] findVerticalSeam()
+    public int[] findVerticalSeam() {
+        int[] edgeTo = new int[this.width()*this.height()];
+        double[] distanceTo = new double[this.width()*this.height()];
+
+        for (int i = 0; i < distanceTo.length; i++) {
+            if (i < this.width()) distanceTo[i] = this.energy(i, 0);
+            else distanceTo[i] = Double.POSITIVE_INFINITY;
+        }
+
+        // topological sort
+        boolean[] marked = new boolean[this.width()*this.height()]; // mark visited vertex ids
+        Stack<Integer> vertexIdsInStack = new Stack<>();
+        Stack<Integer> reversedPostOrder = new Stack<>();
+        for (int i = 0; i < this.width(); i++) {
+            vertexIdsInStack.add(i);
+            marked[i] = true;
+            while (vertexIdsInStack.size() > 0) {
+                int initialStackSize = vertexIdsInStack.size();
+                int currentVertexId = vertexIdsInStack.peek();
+                int[] currentVertexIndices = this.getIndicesForVertexId(currentVertexId);
+
+                for (int adjacentId : this.getBottomAdjacentVertices(currentVertexIndices))
+                    if (adjacentId != -1 && !marked[adjacentId]) vertexIdsInStack.add(adjacentId);
+
+                // if all bottom neighbors are marked
+                if (vertexIdsInStack.size() == initialStackSize) reversedPostOrder.add(vertexIdsInStack.pop());
+            }
+        }
+
+        while (reversedPostOrder.size() > 0) {
+            int currentVertexId = reversedPostOrder.pop();
+            int[] currentVertexIndices = this.getIndicesForVertexId(currentVertexId);
+
+            // relax adjacent vertices (bottom 3)
+            for (int adjacentId : this.getBottomAdjacentVertices(currentVertexIndices)) {
+                if (adjacentId == -1) continue;
+                int[] indicesForAdjacentVertex = this.getIndicesForVertexId(adjacentId);
+                double energyForAdjacentVertex = this.energy(indicesForAdjacentVertex[0], indicesForAdjacentVertex[1]);
+                if (distanceTo[adjacentId] > distanceTo[currentVertexId] + energyForAdjacentVertex) {
+                    distanceTo[adjacentId] = distanceTo[currentVertexId] + energyForAdjacentVertex;
+                    edgeTo[adjacentId] = currentVertexId;
+                }
+            }
+        }
+
+        
+    }
+
+    private int[] getBottomAdjacentVertices(int[] vertexIndices) {
+        // check bottom 3 neighbors: (x-1, y+1), (x, y+1), (x+1, y+1)
+        int bottomLeft = this.getIdForVertexIndices(new int[]{vertexIndices[0] - 1, vertexIndices[1] + 1});
+        int bottomCenter = this.getIdForVertexIndices(new int[]{vertexIndices[0], vertexIndices[1] + 1});
+        int bottomRight = this.getIdForVertexIndices(new int[]{vertexIndices[0] + 1, vertexIndices[1] + 1});
+
+        return new int[]{bottomLeft, bottomCenter, bottomRight};
+    }
+
+    private int[] getIndicesForVertexId(int vertexId) {
+        return new int[]{vertexId % this.width(), Math.floorDiv(vertexId, this.width())};
+    }
+
+    private int getIdForVertexIndices(int[] vertexIndices) {
+        if (vertexIndices[0] < 0 || vertexIndices[0] >= this.width() || vertexIndices[1] < 0 || vertexIndices[1] >= this.height())
+            return -1;
+        return vertexIndices[1] * this.width() + vertexIndices[0];
+    }
 
     // remove horizontal seam from current picture
     public void removeHorizontalSeam(int[] seam)

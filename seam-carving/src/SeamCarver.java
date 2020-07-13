@@ -7,9 +7,13 @@ import java.util.Stack;
 public class SeamCarver {
 
     private Picture picture;
+
+    private boolean transposed;
+
     // create a seam carver object based on the given picture
     public SeamCarver(Picture picture) {
         this.picture = picture;
+        this.transposed = false;
     }
 
     // current picture
@@ -50,10 +54,16 @@ public class SeamCarver {
     }
 
     // sequence of indices for horizontal seam
-//    public int[] findHorizontalSeam()
+    public int[] findHorizontalSeam() {
+        if (!this.transposed) this.transpose();
+        return this.findVerticalSeam();
+    }
 
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
+        // undo transpose
+        if (this.transposed) this.transpose();
+
         int[] edgeTo = new int[this.width()*this.height()];
         double[] distanceTo = new double[this.width()*this.height()];
 
@@ -143,6 +153,17 @@ public class SeamCarver {
         if (vertexIndices[0] < 0 || vertexIndices[0] >= this.width() || vertexIndices[1] < 0 || vertexIndices[1] >= this.height())
             return -1;
         return vertexIndices[1] * this.width() + vertexIndices[0];
+    }
+
+    private void transpose() {
+        Picture pictureTransposed = new Picture(this.height(), this.width());
+        for (int i = 0; i < this.height(); i++) {
+            for (int j = 0; j < this.width(); j++) {
+                pictureTransposed.setRGB(i,j, this.picture.getRGB(j, i));
+            }
+        }
+        this.picture = pictureTransposed;
+        this.transposed = !this.transposed;
     }
 
     // remove horizontal seam from current picture

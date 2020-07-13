@@ -1,7 +1,6 @@
 import edu.princeton.cs.algs4.Picture;
 
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class SeamCarver {
@@ -58,7 +57,11 @@ public class SeamCarver {
         double[] distanceTo = new double[this.width()*this.height()];
 
         for (int i = 0; i < distanceTo.length; i++) {
-            if (i < this.width()) distanceTo[i] = this.energy(i, 0);
+            // initialize top-most row
+            if (i < this.width()) {
+                distanceTo[i] = this.energy(i, 0);
+                edgeTo[i] = -1;
+            }
             else distanceTo[i] = Double.POSITIVE_INFINITY;
         }
 
@@ -82,6 +85,7 @@ public class SeamCarver {
             }
         }
 
+        // build shortest paths trees
         while (reversedPostOrder.size() > 0) {
             int currentVertexId = reversedPostOrder.pop();
             int[] currentVertexIndices = this.getIndicesForVertexId(currentVertexId);
@@ -98,7 +102,22 @@ public class SeamCarver {
             }
         }
 
-        
+        // find bottom-most vertex with smallest distance to any of the top-most vertices
+        int idWithSmallestDistanceTo = this.getIdForVertexIndices(new int[]{0, this.height() - 1}); // bottom left
+        for (int i = 1; i < this.width(); i++) {
+            int vertexId = this.getIdForVertexIndices(new int[]{i, this.height() -1});
+            if (distanceTo[vertexId] < distanceTo[idWithSmallestDistanceTo]) idWithSmallestDistanceTo = vertexId;
+        }
+
+        Stack<Integer> vertexIdsInShortestPath = new Stack<>();
+        for (int vertexId = edgeTo[idWithSmallestDistanceTo]; vertexId != -1; vertexId = edgeTo[vertexId])
+            vertexIdsInShortestPath.add(vertexId);
+
+        int[] indicesToReturn = new int[vertexIdsInShortestPath.size()];
+        for (int i = 0; i < indicesToReturn.length; i++)
+            indicesToReturn[i] = this.getIndicesForVertexId(vertexIdsInShortestPath.pop())[0];
+
+        return indicesToReturn;
     }
 
     private int[] getBottomAdjacentVertices(int[] vertexIndices) {

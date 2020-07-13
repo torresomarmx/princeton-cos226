@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.Picture;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Stack;
 
 public class SeamCarver {
@@ -49,7 +50,7 @@ public class SeamCarver {
     }
 
     // sequence of indices for horizontal seam
-    public int[] findHorizontalSeam()
+//    public int[] findHorizontalSeam()
 
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
@@ -77,8 +78,12 @@ public class SeamCarver {
                 int currentVertexId = vertexIdsInStack.peek();
                 int[] currentVertexIndices = this.getIndicesForVertexId(currentVertexId);
 
-                for (int adjacentId : this.getBottomAdjacentVertices(currentVertexIndices))
-                    if (adjacentId != -1 && !marked[adjacentId]) vertexIdsInStack.add(adjacentId);
+                for (int adjacentId : this.getBottomAdjacentVertexIds(currentVertexIndices)) {
+                    if (adjacentId != -1 && !marked[adjacentId]) {
+                        vertexIdsInStack.add(adjacentId);
+                        marked[adjacentId] = true;
+                    }
+                }
 
                 // if all bottom neighbors are marked
                 if (vertexIdsInStack.size() == initialStackSize) reversedPostOrder.add(vertexIdsInStack.pop());
@@ -91,7 +96,7 @@ public class SeamCarver {
             int[] currentVertexIndices = this.getIndicesForVertexId(currentVertexId);
 
             // relax adjacent vertices (bottom 3)
-            for (int adjacentId : this.getBottomAdjacentVertices(currentVertexIndices)) {
+            for (int adjacentId : this.getBottomAdjacentVertexIds(currentVertexIndices)) {
                 if (adjacentId == -1) continue;
                 int[] indicesForAdjacentVertex = this.getIndicesForVertexId(adjacentId);
                 double energyForAdjacentVertex = this.energy(indicesForAdjacentVertex[0], indicesForAdjacentVertex[1]);
@@ -110,6 +115,7 @@ public class SeamCarver {
         }
 
         Stack<Integer> vertexIdsInShortestPath = new Stack<>();
+        vertexIdsInShortestPath.add(idWithSmallestDistanceTo);
         for (int vertexId = edgeTo[idWithSmallestDistanceTo]; vertexId != -1; vertexId = edgeTo[vertexId])
             vertexIdsInShortestPath.add(vertexId);
 
@@ -120,7 +126,7 @@ public class SeamCarver {
         return indicesToReturn;
     }
 
-    private int[] getBottomAdjacentVertices(int[] vertexIndices) {
+    private int[] getBottomAdjacentVertexIds(int[] vertexIndices) {
         // check bottom 3 neighbors: (x-1, y+1), (x, y+1), (x+1, y+1)
         int bottomLeft = this.getIdForVertexIndices(new int[]{vertexIndices[0] - 1, vertexIndices[1] + 1});
         int bottomCenter = this.getIdForVertexIndices(new int[]{vertexIndices[0], vertexIndices[1] + 1});
@@ -140,12 +146,27 @@ public class SeamCarver {
     }
 
     // remove horizontal seam from current picture
-    public void removeHorizontalSeam(int[] seam)
+ //   public void removeHorizontalSeam(int[] seam)
 
-    // remove vertical seam from current picture
-    public void removeVerticalSeam(int[] seam)
+ //   // remove vertical seam from current picture
+ //   public void removeVerticalSeam(int[] seam) {
+ //
+ //   }
 
     //  unit testing (required)
-    public static void main(String[] args)
+    public static void main(String[] args) {
+        Picture picture = new Picture(args[0]);
+        SeamCarver carver = new SeamCarver(picture);
+        System.out.println(carver.width());
+        System.out.println(carver.height());
 
+        System.out.println("----");
+
+        for (int i = 0; i < carver.height(); i++) {
+            for (int j = 0; j < carver.width(); j++) {
+                System.out.println(carver.getIdForVertexIndices(new int[]{j,i}));
+                System.out.println(Arrays.toString(carver.getIndicesForVertexId(carver.getIdForVertexIndices(new int[]{j,i}))));
+            }
+        }
+    }
 }

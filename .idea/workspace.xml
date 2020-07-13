@@ -33,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/8-puzzle/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/seam-carving/test-files" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -46,30 +46,30 @@
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShortestCommonAncestor">
-    <configuration name="KdTreeST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KdTreeST" />
-      <module name="kdtrees" />
-      <option name="PROGRAM_PARAMETERS" value="text-files/input10.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kdtrees" />
+  <component name="RunManager" selected="Application.PrintSeams">
+    <configuration name="PrintEnergy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintEnergy" />
+      <module name="seam-carving" />
+      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NearestNeighborVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NearestNeighborVisualizer" />
-      <module name="kdtrees" />
-      <option name="PROGRAM_PARAMETERS" value="text-files/input10.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kdtrees" />
+    <configuration name="PrintSeams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintSeams" />
+      <module name="seam-carving" />
+      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RangeSearchVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RangeSearchVisualizer" />
-      <module name="kdtrees" />
-      <option name="PROGRAM_PARAMETERS" value="text-files/input10.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kdtrees" />
+    <configuration name="SeamCarver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SeamCarver" />
+      <module name="seam-carving" />
+      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,19 +93,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RangeSearchVisualizer" />
-      <item itemvalue="Application.NearestNeighborVisualizer" />
-      <item itemvalue="Application.KdTreeST" />
       <item itemvalue="Application.WordNet" />
       <item itemvalue="Application.ShortestCommonAncestor" />
+      <item itemvalue="Application.PrintEnergy" />
+      <item itemvalue="Application.PrintSeams" />
+      <item itemvalue="Application.SeamCarver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintSeams" />
+        <item itemvalue="Application.SeamCarver" />
+        <item itemvalue="Application.PrintEnergy" />
         <item itemvalue="Application.ShortestCommonAncestor" />
         <item itemvalue="Application.WordNet" />
-        <item itemvalue="Application.NearestNeighborVisualizer" />
-        <item itemvalue="Application.KdTreeST" />
-        <item itemvalue="Application.RangeSearchVisualizer" />
       </list>
     </recent_temporary>
   </component>
@@ -127,10 +127,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592827829189">
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594638005872">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592827829189" />
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1594638005872" />
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -147,42 +147,42 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="319" y="268" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1592251866422" />
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1591905866785">
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1594637283897">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1591905866785" />
-    <state width="1622" height="269" key="GridCell.Tab.0.bottom" timestamp="1592828140712">
+    <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1594637283897" />
+    <state width="1671" height="304" key="GridCell.Tab.0.bottom" timestamp="1594639580970">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
-    <state width="1622" height="269" key="GridCell.Tab.0.center" timestamp="1592828140711">
+    <state width="1671" height="304" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580970" />
+    <state width="1671" height="304" key="GridCell.Tab.0.center" timestamp="1594639580970">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140711" />
-    <state width="1622" height="269" key="GridCell.Tab.0.left" timestamp="1592828140709">
+    <state width="1671" height="304" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580970" />
+    <state width="1671" height="304" key="GridCell.Tab.0.left" timestamp="1594639580969">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140709" />
-    <state width="1622" height="269" key="GridCell.Tab.0.right" timestamp="1592828140711">
+    <state width="1671" height="304" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580969" />
+    <state width="1671" height="304" key="GridCell.Tab.0.right" timestamp="1594639580970">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140711" />
-    <state width="1622" height="269" key="GridCell.Tab.1.bottom" timestamp="1592828140713">
+    <state width="1671" height="304" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580970" />
+    <state width="1671" height="304" key="GridCell.Tab.1.bottom" timestamp="1594639580971">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140713" />
-    <state width="1622" height="269" key="GridCell.Tab.1.center" timestamp="1592828140712">
+    <state width="1671" height="304" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580971" />
+    <state width="1671" height="304" key="GridCell.Tab.1.center" timestamp="1594639580971">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
-    <state width="1622" height="269" key="GridCell.Tab.1.left" timestamp="1592828140712">
+    <state width="1671" height="304" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580971" />
+    <state width="1671" height="304" key="GridCell.Tab.1.left" timestamp="1594639580971">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
-    <state width="1622" height="269" key="GridCell.Tab.1.right" timestamp="1592828140712">
+    <state width="1671" height="304" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580971" />
+    <state width="1671" height="304" key="GridCell.Tab.1.right" timestamp="1594639580971">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1622" height="269" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1592828140712" />
+    <state width="1671" height="304" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1594639580971" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1594227844079">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -199,10 +199,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594219969272">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594637593687">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1594219969272" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1594637593687" />
     <state x="724" y="133" width="710" height="780" key="find.popup" timestamp="1592827923941">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>

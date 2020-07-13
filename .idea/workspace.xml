@@ -68,7 +68,7 @@
     <configuration name="ResizeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ResizeDemo" />
       <module name="seam-carving" />
-      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png 1 0" />
+      <option name="PROGRAM_PARAMETERS" value="test-files/chameleon.png 0 100" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,10 +127,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594644101101">
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594645795223">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1594644101101" />
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1594645795223" />
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -151,22 +151,22 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1594637283897" />
-    <state width="1671" height="153" key="GridCell.Tab.0.bottom" timestamp="1594644845466">
+    <state width="1671" height="153" key="GridCell.Tab.0.bottom" timestamp="1594645797891">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="153" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1594644845466" />
-    <state width="1671" height="153" key="GridCell.Tab.0.center" timestamp="1594644845465">
+    <state width="1671" height="153" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1594645797891" />
+    <state width="1671" height="153" key="GridCell.Tab.0.center" timestamp="1594645797891">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="153" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1594644845465" />
-    <state width="1671" height="153" key="GridCell.Tab.0.left" timestamp="1594644845464">
+    <state width="1671" height="153" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1594645797891" />
+    <state width="1671" height="153" key="GridCell.Tab.0.left" timestamp="1594645797890">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="153" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1594644845464" />
-    <state width="1671" height="153" key="GridCell.Tab.0.right" timestamp="1594644845465">
+    <state width="1671" height="153" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1594645797890" />
+    <state width="1671" height="153" key="GridCell.Tab.0.right" timestamp="1594645797891">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="153" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1594644845465" />
+    <state width="1671" height="153" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1594645797891" />
     <state width="1671" height="296" key="GridCell.Tab.1.bottom" timestamp="1594644800709">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -227,11 +227,6 @@
           <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/seam-carving/src/SeamCarver.java</url>
-          <line>176</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

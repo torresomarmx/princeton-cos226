@@ -167,12 +167,23 @@ public class SeamCarver {
     }
 
     // remove horizontal seam from current picture
- //   public void removeHorizontalSeam(int[] seam)
+    public void removeHorizontalSeam(int[] seam) {
+        if (!this.transposed) this.transpose();
+        this.removeVerticalSeam(seam);
+    }
 
- //   // remove vertical seam from current picture
- //   public void removeVerticalSeam(int[] seam) {
- //
- //   }
+    // remove vertical seam from current picture
+    public void removeVerticalSeam(int[] seam) {
+        if (this.transposed) this.transpose();
+        Picture newPicture = new Picture(this.width() -1, this.height());
+        for (int i = 0; i < this.height(); i++) {
+            for (int j = 0; j < this.width() - 1; j++) {
+                if (j >= seam[i]) newPicture.setRGB(j, i, this.picture.getRGB(j + 1, i));
+                else newPicture.setRGB(j, i, this.picture.getRGB(j, i));
+            }
+        }
+        this.picture = newPicture;
+    }
 
     //  unit testing (required)
     public static void main(String[] args) {

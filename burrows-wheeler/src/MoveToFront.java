@@ -20,14 +20,29 @@ public class MoveToFront {
         }
         BinaryStdOut.close();
     }
-//
 //    // apply move-to-front decoding, reading from stdin and writing to stdout
-//    public static void decode()
-//
+    public static void decode() {
+        LinkedList<Character> alphabet = new LinkedList<>();
+        for (int i = 0; i < 255; i++)
+            alphabet.add((char) i);
+
+        while (!BinaryStdIn.isEmpty()) {
+            int inInt = BinaryStdIn.readInt(8);
+            char charAtIdx = alphabet.get(inInt);
+            BinaryStdOut.write(charAtIdx);
+            alphabet.remove(inInt);
+            alphabet.addFirst(charAtIdx);
+        }
+        BinaryStdOut.close();
+    }
+
     // if args[0] is "-", apply move-to-front encoding
     // if args[0] is "+", apply move-to-front decoding
     public static void main(String[] args) {
-        MoveToFront.encode();
+        if (args[0].equals("-"))
+            MoveToFront.encode();
+        else if (args[0].equals("+"))
+            MoveToFront.decode();
     }
 
 }

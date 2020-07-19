@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/8-puzzle/8-puzzle.iml" filepath="$PROJECT_DIR$/8-puzzle/8-puzzle.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-complete/auto-complete.iml" filepath="$PROJECT_DIR$/auto-complete/auto-complete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/burrows-wheeler/burrows-wheeler.iml" filepath="$PROJECT_DIR$/burrows-wheeler/burrows-wheeler.iml" />
       <module fileurl="file://$PROJECT_DIR$/kdtrees/kdtrees.iml" filepath="$PROJECT_DIR$/kdtrees/kdtrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/percolation/percolation.iml" filepath="$PROJECT_DIR$/percolation/percolation.iml" />
       <module fileurl="file://$PROJECT_DIR$/queues/queues.iml" filepath="$PROJECT_DIR$/queues/queues.iml" />

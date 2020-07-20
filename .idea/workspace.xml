@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/burrows-wheeler/burrows-wheeler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/burrows-wheeler/burrows-wheeler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/burrows-wheeler/src/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/burrows-wheeler/src/MoveToFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +46,20 @@
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MoveToFront">
+  <component name="RunManager" selected="Application.CircularSuffixArray">
+    <configuration name="CircularSuffixArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CircularSuffixArray" />
+      <module name="burrows-wheeler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MoveToFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="burrows-wheeler" />
       <option name="REDIRECT_INPUT" value="true" />
       <option name="INPUT_FILE" value="text-files/abra.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burrows-wheeler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrintEnergy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PrintEnergy" />
-      <module name="seam-carving" />
-      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,19 +92,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PrintEnergy" />
       <item itemvalue="Application.PrintSeams" />
       <item itemvalue="Application.SeamCarver" />
       <item itemvalue="Application.ResizeDemo" />
       <item itemvalue="Application.MoveToFront" />
+      <item itemvalue="Application.CircularSuffixArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircularSuffixArray" />
         <item itemvalue="Application.MoveToFront" />
         <item itemvalue="Application.ResizeDemo" />
         <item itemvalue="Application.PrintSeams" />
         <item itemvalue="Application.SeamCarver" />
-        <item itemvalue="Application.PrintEnergy" />
       </list>
     </recent_temporary>
   </component>
@@ -157,38 +154,38 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1595195555830" />
-    <state width="1671" height="166" key="GridCell.Tab.0.bottom" timestamp="1595198562924">
+    <state width="1099" height="202" key="GridCell.Tab.0.bottom" timestamp="1595280657777">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="166" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595198562924" />
-    <state width="1671" height="166" key="GridCell.Tab.0.center" timestamp="1595198562921">
+    <state width="1099" height="202" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
+    <state width="1099" height="202" key="GridCell.Tab.0.center" timestamp="1595280657777">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="166" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595198562921" />
-    <state width="1671" height="166" key="GridCell.Tab.0.left" timestamp="1595198562920">
+    <state width="1099" height="202" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
+    <state width="1099" height="202" key="GridCell.Tab.0.left" timestamp="1595280657776">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="166" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595198562920" />
-    <state width="1671" height="166" key="GridCell.Tab.0.right" timestamp="1595198562923">
+    <state width="1099" height="202" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657776" />
+    <state width="1099" height="202" key="GridCell.Tab.0.right" timestamp="1595280657777">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="166" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595198562923" />
-    <state width="1671" height="296" key="GridCell.Tab.1.bottom" timestamp="1595195314619">
+    <state width="1099" height="202" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
+    <state width="1099" height="296" key="GridCell.Tab.1.bottom" timestamp="1595280577307">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="296" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595195314619" />
-    <state width="1671" height="296" key="GridCell.Tab.1.center" timestamp="1595195314618">
+    <state width="1099" height="296" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
+    <state width="1099" height="296" key="GridCell.Tab.1.center" timestamp="1595280577307">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="296" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595195314618" />
-    <state width="1671" height="296" key="GridCell.Tab.1.left" timestamp="1595195314618">
+    <state width="1099" height="296" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
+    <state width="1099" height="296" key="GridCell.Tab.1.left" timestamp="1595280577306">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="296" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595195314618" />
-    <state width="1671" height="296" key="GridCell.Tab.1.right" timestamp="1595195314619">
+    <state width="1099" height="296" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577306" />
+    <state width="1099" height="296" key="GridCell.Tab.1.right" timestamp="1595280577307">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1671" height="296" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595195314619" />
+    <state width="1099" height="296" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1595194980618">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -205,10 +202,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595200962784">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595278803474">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1595200962784" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1595278803474" />
     <state x="724" y="133" width="710" height="780" key="find.popup" timestamp="1595200993654">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -233,6 +230,11 @@
           <url>file://$PROJECT_DIR$/8-puzzle/src/Solver.java</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

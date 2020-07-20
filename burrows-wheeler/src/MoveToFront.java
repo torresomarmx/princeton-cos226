@@ -20,7 +20,7 @@ public class MoveToFront {
         }
         BinaryStdOut.close();
     }
-//    // apply move-to-front decoding, reading from stdin and writing to stdout
+   // apply move-to-front decoding, reading from stdin and writing to stdout
     public static void decode() {
         LinkedList<Character> alphabet = new LinkedList<>();
         for (int i = 0; i < 255; i++)

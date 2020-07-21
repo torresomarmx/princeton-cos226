@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ebffc0d-6918-4211-84fb-5326b4973514" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,18 @@
       <recent name="$PROJECT_DIR$/8-puzzle/text-files" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CircularSuffixArray">
+  <component name="RunManager" selected="Application.BurrowsWheeler">
+    <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
+      <module name="burrows-wheeler" />
+      <option name="PROGRAM_PARAMETERS" value="-" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="text-files/abra.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burrows-wheeler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircularSuffixArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircularSuffixArray" />
       <module name="burrows-wheeler" />
@@ -82,29 +92,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeamCarver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SeamCarver" />
-      <module name="seam-carving" />
-      <option name="PROGRAM_PARAMETERS" value="test-files/3x4.png" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/seam-carving" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.PrintSeams" />
-      <item itemvalue="Application.SeamCarver" />
       <item itemvalue="Application.ResizeDemo" />
       <item itemvalue="Application.MoveToFront" />
       <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.BurrowsWheeler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.CircularSuffixArray" />
         <item itemvalue="Application.MoveToFront" />
         <item itemvalue="Application.ResizeDemo" />
         <item itemvalue="Application.PrintSeams" />
-        <item itemvalue="Application.SeamCarver" />
       </list>
     </recent_temporary>
   </component>
@@ -126,10 +127,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="174" y="181" width="800" height="684" key="#Project_Structure/0.27.1920.1008@0.27.1920.1008" timestamp="1589280774051" />
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595195687957">
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595330716221">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1595195687957" />
+    <state x="771" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1595330716221" />
     <state x="242" y="328" width="688" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590162456411">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -146,46 +147,46 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="651" y="260" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1595194979509" />
-    <state x="319" y="268" key="#xdebugger.evaluate" timestamp="1592251866422">
+    <state x="553" y="397" key="#xdebugger.evaluate" timestamp="1595330984367">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="319" y="268" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1592251866422" />
+    <state x="553" y="397" key="#xdebugger.evaluate/0.27.1920.1008@0.27.1920.1008" timestamp="1595330984367" />
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl" timestamp="1595195555830">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="545" y="246" width="735" height="534" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1595195555830" />
-    <state width="1099" height="202" key="GridCell.Tab.0.bottom" timestamp="1595280657777">
+    <state width="1562" height="296" key="GridCell.Tab.0.bottom" timestamp="1595331080925">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="202" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
-    <state width="1099" height="202" key="GridCell.Tab.0.center" timestamp="1595280657777">
+    <state width="1562" height="296" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080925" />
+    <state width="1562" height="296" key="GridCell.Tab.0.center" timestamp="1595331080925">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="202" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
-    <state width="1099" height="202" key="GridCell.Tab.0.left" timestamp="1595280657776">
+    <state width="1562" height="296" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080925" />
+    <state width="1562" height="296" key="GridCell.Tab.0.left" timestamp="1595331080925">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="202" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657776" />
-    <state width="1099" height="202" key="GridCell.Tab.0.right" timestamp="1595280657777">
+    <state width="1562" height="296" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080925" />
+    <state width="1562" height="296" key="GridCell.Tab.0.right" timestamp="1595331080925">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="202" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595280657777" />
-    <state width="1099" height="296" key="GridCell.Tab.1.bottom" timestamp="1595280577307">
+    <state width="1562" height="296" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080925" />
+    <state width="1562" height="296" key="GridCell.Tab.1.bottom" timestamp="1595331080926">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="296" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
-    <state width="1099" height="296" key="GridCell.Tab.1.center" timestamp="1595280577307">
+    <state width="1562" height="296" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080926" />
+    <state width="1562" height="296" key="GridCell.Tab.1.center" timestamp="1595331080926">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="296" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
-    <state width="1099" height="296" key="GridCell.Tab.1.left" timestamp="1595280577306">
+    <state width="1562" height="296" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080926" />
+    <state width="1562" height="296" key="GridCell.Tab.1.left" timestamp="1595331080926">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="296" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577306" />
-    <state width="1099" height="296" key="GridCell.Tab.1.right" timestamp="1595280577307">
+    <state width="1562" height="296" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080926" />
+    <state width="1562" height="296" key="GridCell.Tab.1.right" timestamp="1595331080926">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1099" height="296" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595280577307" />
+    <state width="1562" height="296" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1595331080926" />
     <state x="357" y="134" width="1122" height="737" key="SettingsEditor" timestamp="1595194980618">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -202,10 +203,10 @@
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="497" y="354" key="com.intellij.ide.util.TipDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1592247868516" />
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595278803474">
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595282294849">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1595278803474" />
+    <state x="307" y="216" width="662" height="622" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1595282294849" />
     <state x="724" y="133" width="710" height="780" key="find.popup" timestamp="1595200993654">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
@@ -232,9 +233,9 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/burrows-wheeler/src/CircularSuffixArray.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/burrows-wheeler/src/BurrowsWheeler.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -53,8 +53,11 @@ public class BurrowsWheeler {
             tCharSorted[count[tChars[i]]++] = tChars[i];
 
         HashMap<Character, LinkedList<Integer>> charToTIndices = new HashMap<>();
-        for (int i = 0; i < tChars.length; i++)
-            charToTIndices.getOrDefault(tChars[i], new LinkedList<>()).add(i);
+        for (int i = 0; i < tChars.length; i++) {
+            LinkedList<Integer> indices = charToTIndices.getOrDefault(tChars[i], new LinkedList<>());
+            indices.add(i);
+            charToTIndices.put(tChars[i], indices);
+        }
 
         int[] next = new int[tChars.length];
         for (int i = 0; i < tCharSorted.length; i++)
@@ -65,6 +68,8 @@ public class BurrowsWheeler {
             BinaryStdOut.write(tCharSorted[current]);
             current = next[current];
         }
+
+        BinaryStdOut.close();
     }
 
     // if args[0] is "-", apply Burrows-Wheeler transform
